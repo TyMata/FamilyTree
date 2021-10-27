@@ -1,5 +1,7 @@
 ﻿using System;
-using Library;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using Library; 
 
 namespace Program
 {
@@ -25,7 +27,9 @@ namespace Program
             n3.AddChildren(n7);
 
             // visitar el árbol aquí
-            
+            SumaEdadVisitor v = new SumaEdadVisitor();
+            n1.Accept(v);
+            Console.WriteLine(v.Content);
         }
     }
 }
