@@ -2,7 +2,7 @@ using System;
 
 namespace Library
 {
-    public class PersonaVisitor: Visitor
+    public class SumaEdadVisitor: Visitor
     {
         
         public override void Visit(Node nodo)
